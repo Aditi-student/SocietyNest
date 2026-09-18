@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SocietyNest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="brand-mark">S</span>SocietyNest</a>
+            <a class="btn btn-nav" href="register.html">Create account</a>
+        </div>
+    </nav>
+
+    <main class="form-page">
+        <form id="loginForm" class="form-card">
+            <div class="section-kicker">WELCOME BACK</div>
+            <h1 class="mt-2">Log in to SocietyNest</h1>
+            <p class="subtitle mb-4">Pick up where you left off and manage your applications.</p>
+
+            <div id="loginMessage" class="mb-3"></div>
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input id="email" type="email" class="form-control" placeholder="you@example.com" required>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label">Password</label>
+                <input id="password" type="password" class="form-control" placeholder="Enter your password" required>
+            </div>
+
+            <button id="loginButton" class="btn btn-warm w-100" type="submit">Log in</button>
+            <p class="text-center mt-4 mb-0 muted">New here? <a href="register.html" style="color:var(--terra-dark);font-weight:700;">Create an account</a></p>
+        </form>
+    </main>
+
+    <div id="toastContainer"></div>
+    <script src="js/auth.js"></script>
+</body>
+</html>
