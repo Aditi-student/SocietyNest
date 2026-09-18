@@ -1,0 +1,9 @@
+{
+  "name": "societynest",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node backend/server.js",
+    "postinstall": "npm --prefix backend install"
+  }
+}
